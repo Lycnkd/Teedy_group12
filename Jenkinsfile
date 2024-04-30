@@ -12,6 +12,7 @@ pipeline {
             }
         }
     }
+    
     post {
         always {
             archiveArtifacts artifacts: '**/target/site/**', fingerprint: true
